@@ -5,9 +5,17 @@ gallery: true
 ---
 
 
-{% include gallery-figure.html img="banner.png" alt=" title card of the presentation with an illustration of Spokane from a bird's eye view with a detail below depicting the artist of the illustration being dictated to by two people in top hats standing on rocks." caption="Bird's Eye View of Spokane, ca. 1890s. Eastern Washington State Historical Society. Ephemera Collection. Northwest Museum of Arts and Culture, Spokane, WA." title="Bird's Eye View of Spokane, ca. 1890s. Eastern Washington State Historical Society. Ephemera Collection. Northwest Museum of Arts and Culture, Spokane, WA." %}
+{% include gallery-figure.html img="banner.png" alt="title card of the presentation Adobe PDF Accessibility Remediation Workshop, guide for University of Idaho Faculty, staff and Students, Andrew Weymouth, Fall 2025." %}
 
-* [Slide Deck](https://indd.adobe.com/view/204b69f5-13f8-4ef4-8ac3-f9bdbd22fcdd){:target="_blank" rel="noopener"}
+<br>
+
+We have been working together to make sure our digital collections and library site meet the technical standards of the [Web Content Accessibility Guidelines 2.1](https://www.w3.org/TR/WCAG21/) by [the deadline of April 24th, 2026](https://advocacy.sba.gov/2024/04/25/justice-department-finalizes-rule-requiring-state-and-local-governments-to-make-their-websites-accessible/), and now we need to audit the PDFs attached to our VERSO pages towards this effort. 
+
+> The following steps will guide you through how to remediate a PDF file for accessibility using Acrobat Pro, as of fall 2025. 
+
+**Full disclosure**: I and other folks in the library are not huge fans of Acrobat as an application. You will find some of the semantics and architecture of the application are vague, unintuitive and overly complicated, and there is an opportunity to create in-house tools that will check and address remediation. That said, this will address the PDF files currently in VERSO before April 24th timeline. 
+
+<br>
 
 {% include toc.html %}
 

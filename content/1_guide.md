@@ -215,4 +215,28 @@ How you save is important to preserve your accessibility work.
 
 <br>
 
-**Thats it! Enjoy your accessible PDF file!** 
+<div style="width:100%; text-align:center;">
+
+  <div style="background-color:white; padding:20px; border-radius:12px; display:inline-block; text-align:center; box-shadow:0 2px 6px rgba(0,0,0,0.1);">
+
+  <pre style="font-family: monospace; line-height: 1.1em; font-size: 14px; background-color:white; margin: 0 auto; display:inline-block; text-align:left;">
+       ________
+     /         \
+    |    PDF    |  
+    |   -----   |  
+    |  ( •‿• )  |  
+    |    | |    |  
+     \_________/   
+        /   \       
+       /_____\      
+        |   |       
+       (b) (b)     
+  </pre>
+
+  <p><b>That's it! Enjoy your accessible PDF file!</b></p>
+
+  </div>
+
+</div>
+
+<br>

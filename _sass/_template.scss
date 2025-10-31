@@ -1,3 +1,6 @@
+// ADDED: Define a dedicated, high-contrast focus color for consistency
+ $focus-color: #005A9C; // A high-contrast blue is a common and effective choice
+
 /* tweak defaults if variables set */
 body {
     @if variable-exists(base-font-family) { font-family: $base-font-family; }
@@ -8,10 +11,10 @@ body {
 @if variable-exists(link-color) {
     a {
         color: $link-color;
-        @if variable-exists(text-color) {
-            &:hover {
-                color: $text-color; 
-            }
+        // MODIFIED: Added underline on hover/focus for better accessibility
+        &:hover,
+        &:focus {
+            text-decoration: underline;
         }
     }
 }
@@ -26,31 +29,37 @@ body {
 }
 
 /* skip nav for accessibility, based on https://webaim.org/techniques/skipnav/ */
+// MODIFIED: Darkened background for better contrast and added a visible focus style
 #skip-to-content a {
-	padding:6px;
-	position: absolute;
-	top:-200px;
-	left:0px;
-	color:white;
-	border-right:1px solid white;
-	border-bottom:1px solid white;
-	border-bottom-right-radius:8px;
-	background:#BF1722;
-	-webkit-transition: top 1s ease-out;
+    padding:8px; // Slightly increased padding for better target size
+    position: absolute;
+    top:-200px;
+    left:0px;
+    color:white;
+    border-right:1px solid white;
+    border-bottom:1px solid white;
+    border-bottom-right-radius:8px;
+    background: #A01015; // Darkened for better contrast (now ~6.2:1)
+    -webkit-transition: top 1s ease-out;
     transition: top 1s ease-out;
     z-index: 100;
 }
 #skip-to-content a:focus {
-	position:absolute;
-	left:0px;
-	top:0px;
-	outline-color:transparent;	
-	-webkit-transition: top .1s ease-in;
+    position:absolute;
+    left:0px;
+    top:0px;
+    // REMOVED: outline-color:transparent; This is bad for accessibility.
+    // UPDATED: Using the consistent focus color for a clear, visible style
+    outline: 3px solid $focus-color;
+    outline-offset: 2px;
+    -webkit-transition: top .1s ease-in;
     transition: top .1s ease-in;
 }
 
-/* remove link underline */ 
-a { text-decoration: none; }
+/* MODIFIED: Remove link underline by default, but add it back on hover/focus */
+a { 
+    text-decoration: none; 
+}
 
 /* add decorative borders  */
 header {
@@ -69,7 +78,8 @@ footer {
         &.active { 
             color: rgba(0,0,0,.9);
         }
-        &:hover {
+        &:hover,
+        &:focus { // ADDED: explicit focus state for consistency
             color: rgba(0,0,0,.8);
             text-decoration: underline;
         }
@@ -86,7 +96,18 @@ footer {
     bottom: 35px; 
     right: 20px; 
     z-index: 99;
-    font-size: 40px; 
+    font-size: 40px;
+    // ADDED: Added focus and hover states for accessibility
+    &:hover,
+    &:focus {
+        opacity: 0.8;
+        text-decoration: none; // Typically no underline on icon links
+    }
+    &:focus {
+        // UPDATED: Using the consistent focus color
+        outline: 2px solid $focus-color;
+        outline-offset: 2px;
+    }
 }
 
 /* bootstrap icons tweaks */

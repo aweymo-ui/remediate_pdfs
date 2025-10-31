@@ -217,7 +217,7 @@ How you save is important to preserve your accessibility work.
 
 <div style="width:100%; text-align:center;">
 
-  <div style="background-color:white; padding:20px; border-radius:12px; display:inline-block; text-align:center; box-shadow:0 2px 6px rgba(0,0,0,0.1);">
+  <div role="img" aria-label="ASCII art of a lil’ PDF feller — a smiling, anthropomorphic sheet of paper with arms and legs, looking proud of being accessible." style="background-color:white; padding:20px; border-radius:12px; display:inline-block; text-align:center; box-shadow:0 2px 6px rgba(0,0,0,0.1);">
 
   <pre style="font-family: monospace; line-height: 1.1em; font-size: 14px; background-color:white; margin: 0 auto; display:inline-block; text-align:left;">
        ________

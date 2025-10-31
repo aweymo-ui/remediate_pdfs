@@ -13,7 +13,7 @@ We have been working together to make sure our digital collections and library s
 
 > The following steps will guide you through how to remediate a PDF file for accessibility using Acrobat Pro, as of fall 2025. 
 
-**Full disclosure**: I and other folks in the library are not huge fans of Acrobat as an application. You will find some of the semantics and architecture of the application are vague, unintuitive and overly complicated, and there is an opportunity to create in-house tools that will check and address remediation. That said, this will address the PDF files currently in VERSO before April 24th timeline. 
+**Full disclosure**: I and other folks in the library are not huge fans of Acrobat as an application. You will find some of the semantics and architecture of the application are vague, unintuitive and overly complicated. That said, this will address the PDF files currently in VERSO before the April 24th timeline. 
 
 <br>
 
